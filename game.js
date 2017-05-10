@@ -107,7 +107,7 @@ Hoops.Game.prototype = {
 
         this.stage.backgroundColor = 0x100438;
 
-        this.board = this.add.sprite(400, 120, 'board');
+        this.board = this.add.sprite(700, 300, 'board');
 
         this.physics.p2.enable(this.board, Hoops.showDebug);
 
@@ -126,7 +126,7 @@ Hoops.Game.prototype = {
         this.balls = this.add.physicsGroup(Phaser.Physics.P2JS);
         this.balls.enableBodyDebug = Hoops.showDebug;
 
-        this.basket = this.add.sprite(400, 120, 'basket');
+        this.basket = this.add.sprite(, 120, 'basket');
         this.basket.anchor.set(0.5);
 
         this.player1 = this.add.sprite(60, 430, 'player', 'player1down');
