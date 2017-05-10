@@ -127,7 +127,7 @@ Hoops.Game.prototype = {
         this.balls.enableBodyDebug = Hoops.showDebug;
 
         this.basket = this.add.sprite(400, 120, 'basket');
-        this.basket.anchor.set(0.5);
+        this.basket.anchor.set(0.7);
 
         this.player1 = this.add.sprite(60, 430, 'player', 'player1down');
         this.player2 = this.add.sprite(190, 410, 'player', 'player2down');
