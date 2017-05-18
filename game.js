@@ -44,7 +44,7 @@ Hoops.MainMenu.prototype = {
 
     create: function () {
 
-        this.stage.backgroundColor = 0x100420;
+        this.stage.backgroundColor = 0x100406;
 
         var logo = this.add.image(this.world.centerX, 80, 'logo');
         logo.anchor.x = 0.5;
