@@ -274,7 +274,7 @@ Hoops.Game.prototype = {
     preRender: function () {
 
         this.basket.x = this.board.x;
-        this.basket.y = this.board.y-70;
+        this.basket.y = this.board.y+70;
 
     },
 
