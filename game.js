@@ -107,7 +107,7 @@ Hoops.Game.prototype = {
 
         this.stage.backgroundColor = 0x100438;
 
-        this.board = this.add.sprite(700, 300, 'board');
+        this.board = this.add.sprite(700, 200, 'board');
 
         this.physics.p2.enable(this.board, Hoops.showDebug);
 
