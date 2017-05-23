@@ -44,7 +44,7 @@ Hoops.MainMenu.prototype = {
 
     create: function () {
 
-        this.stage.backgroundColor = 0xCC99FF;
+        this.stage.backgroundColor = 0x006666;
 
         var logo = this.add.image(this.world.centerX, 80, 'logo');
         logo.anchor.x = 0.5;
@@ -105,7 +105,7 @@ Hoops.Game.prototype = {
 
     create: function () {
 
-        this.stage.backgroundColor = 0x006666;
+        this.stage.backgroundColor = 0xE566FF;
 
         this.board = this.add.sprite(700, 200, 'board');
 
