@@ -99,7 +99,7 @@ Hoops.Game.prototype = {
         this.physics.p2.restitution = 0.8;
 
         this.score = 0;
-        this.shotsLeft = 10;
+        this.shotsLeft = 20;
 
     },
 
