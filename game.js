@@ -70,7 +70,7 @@ Hoops.Game = function () {
     this.score = 0;
     this.scoreText = null;
 
-    this.shotsLeft = 10;
+    this.shotsLeft = 20;
     this.shotsLeftText = null;
 
     this.player1 = null;
