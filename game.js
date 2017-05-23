@@ -105,7 +105,7 @@ Hoops.Game.prototype = {
 
     create: function () {
 
-        this.stage.backgroundColor = 0x000066;
+        this.stage.backgroundColor = 0x100438;
 
         this.board = this.add.sprite(700, 200, 'board');
 
