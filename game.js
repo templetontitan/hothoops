@@ -294,13 +294,29 @@ game.state.add('Hoops.Game', Hoops.Game);
 
 game.state.start('Hoops.Preloader');
 
-create() {
-    timer = game.time.create(false);
-timer.loop(3000, updateCounter, this);
-timer.start();
+var timer;
+var total = 0;
 
-updateCounter() {
- total++;
+function create() {
+
+    game.stage.backgroundColor = '#000';
+
+    //  Create our Timer
+    timer = game.time.create(false);
+
+    //  Set a TimerEvent to occur after 2 seconds
+    timer.loop(2000, updateCounter, this);
+
+    //  Start the timer running - this is important!
+    //  It won't start automatically, allowing you to hook it to button events and the like.
+    timer.start();
+
+}
+
+function updateCounter() {
+
+    total++;
+    }
  this.timerText = this.add.bitmapText(14, 0, 'fat-and-tiny', 'SCORE: 0', 30);
         this.timerText.smoothed = false;
 this.timerText.text = "TIME: " + this.timer;
