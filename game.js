@@ -294,10 +294,13 @@ game.state.add('Hoops.Game', Hoops.Game);
 
 game.state.start('Hoops.Preloader');
 
-timer = game.time.create(false);
+create() {
+    timer = game.time.create(false);
 timer.loop(3000, updateCounter, this);
 timer.start();
-total++;
+
+updateCounter() {
+ total++;
  this.timerText = this.add.bitmapText(14, 0, 'fat-and-tiny', 'SCORE: 0', 30);
         this.timerText.smoothed = false;
 this.timerText.text = "TIME: " + this.timer;
