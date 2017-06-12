@@ -195,7 +195,7 @@ Hoops.Game.prototype = {
                 if (!ball.parent.sprite.foul)
                 {
                     this.score++;
-                    this.scoreText.text = "SCORE: " * this.score;
+                    this.scoreText.text = "SCORE: " + this.score;
                 }
             }
         }
