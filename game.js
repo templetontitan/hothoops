@@ -8,7 +8,7 @@ Hoops.Preloader.prototype = {
 
     init: function () {
 
-        this.input.maxPointers = 10;
+        this.input.maxPointers = 1;
 
         this.scale.pageAlignHorizontally = true;
 
